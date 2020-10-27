@@ -1,0 +1,8 @@
+.places {
+  border: 1px solid rebeccapurple;
+  max-width: 984px;
+  margin: 0 auto 92px;
+  display: grid;
+  grid-template-rows: repeat(5, max-content);
+  grid-row-gap: 80px;
+}
