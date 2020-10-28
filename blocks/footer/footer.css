@@ -1,25 +1,22 @@
 .footer {
-  border: 1px solid rebeccapurple;
-  max-width: 1184px;
-  margin: 0 auto 24px;
-  display: flex;
+  max-width: 100%;
+  margin: 0 48px 24px;
+  display: grid;
   justify-content: space-between;
+  grid-template-columns: repeat(2, max-content);
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 949px) {
   .footer {
-    max-width: 928px;
+    margin: 0 24px 24px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 749px) {
   .footer {
-    max-width: 720px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .footer {
-    max-width: max-content;
+    margin: 0 16px 24px;
+    grid-template-columns: max-content;
+    grid-template-rows: repeat(2, max-content);
+    grid-row-gap: 32px;
   }
 }
